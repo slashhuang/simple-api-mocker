@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>web api测试平台</title>
+	<script src="https://cdn.bootcss.com/jquery/3.2.1/core.js"></script>
+</head>
+<body>
+	请输入方法名
+	<input placeholder='请输入方法名' name='name'/>
+	请粘贴json数据
+	<input placeholder='请输入json数据参数' name='data'/>
+	<button id='sender'>
+		点击发送数据
+	</button>
+	<div>
+		服务端返回数据为: 
+		<div id='preview'></div>
+	</div>
+	<script type="text/javascript">
+	$('#sender').click(function(){
+		var method = $("input[name='name']").val();
+		var data = $("input[name='data']").val();
+		$.ajax({
+			method: method,
+			data: 
+		})
+	});
+	</script>>
+</body>
+</html>
