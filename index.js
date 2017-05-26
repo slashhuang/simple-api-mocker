@@ -19,8 +19,6 @@ const linkJson = require('./src/link')
 const markdownJson = require('./src/markdown')
 const textJson = require('./src/text')
 
-const textStr = templateMocker(textJson);
-console.log(textStr)
 exec(templateMocker(cardJson))
 exec(templateMocker(linkJson))
 exec(templateMocker(markdownJson))
